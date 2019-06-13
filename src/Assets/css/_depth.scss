@@ -1,0 +1,17 @@
+@import 'mixins';
+
+.depth-1 {
+  @include depth(1);
+}
+
+.depth-2 {
+  @include depth(2);
+}
+
+.depth-3 {
+  @include depth(3);
+}
+
+.depth-4 {
+  @include depth(4);
+}

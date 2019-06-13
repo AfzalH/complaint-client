@@ -1,0 +1,2 @@
+/api/*	http://biker.srizon.com:3333/:splat	200
+/*	/index.html	200

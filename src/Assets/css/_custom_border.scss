@@ -1,0 +1,59 @@
+.grad-border:after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(#fff, 0)), color-stop(#ddd), to(rgba(#fff, 0)));
+    background: linear-gradient(to right, rgba(#fff, 0), #ddd, rgba(#fff, 0));
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    margin: 15px 0;
+}
+
+.grad-border.thin:after {
+    height: 1px;
+}
+
+.grad-border.thick:after {
+    height: 3px;
+}
+
+.grad-border.dark:after {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(#fff, 0)), color-stop(#ccc), to(rgba(#fff, 0)));
+    background: linear-gradient(to right, rgba(#fff, 0), #ccc, rgba(#fff, 0));
+}
+
+.grad-border.light:after {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(#fff, 0)), color-stop(#eee), to(rgba(#fff, 0)));
+    background: linear-gradient(to right, rgba(#fff, 0), #eee, rgba(#fff, 0));
+}
+
+.grad-border-left:after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(#ddd), to(rgba(#fff, 0)));
+    background: linear-gradient(to right, #ddd, rgba(#fff, 0));
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    margin: 15px 0;
+}
+
+.grad-border-left.thin:after {
+    height: 1px;
+}
+
+.grad-border-left.thick:after {
+    height: 3px;
+}
+
+.grad-border-left.dark:after {
+    background: -webkit-gradient(linear, left top, right top, from(#ccc), to(rgba(#fff, 0)));
+    background: linear-gradient(to right, #ccc, rgba(#fff, 0));
+}
+
+.grad-border-left.light:after {
+    background: -webkit-gradient(linear, left top, right top, from(#eee), to(rgba(#fff, 0)));
+    background: linear-gradient(to right, #eee, rgba(#fff, 0));
+}
