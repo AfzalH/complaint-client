@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col, Button } from 'reactstrap'
+import { Link } from 'react-router-dom'
 
 class Categories extends React.Component {
     state = {
@@ -20,12 +21,13 @@ class Categories extends React.Component {
             <>
                 <Row>
                     <Col xs="12" className="mb-3">
-                        {this.state.categories.map(cat =>
-                            <Button
+                        {this.state.categories.map((cat, i) =>
+                            <Button key={i}
                                 className="w-100 my-2"
                                 outline
                                 size="lg"
-                                onClick={() => {}}
+                                tag={Link}
+                                to="/chat"
                             >
                                 {cat}
                             </Button>

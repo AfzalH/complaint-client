@@ -4,6 +4,7 @@ import {getLastPart} from "../../Util/pathHelper"
 import { getAction } from 'Redux/rest/actions';
 import {connect} from "react-redux"
 import {get} from "lodash"
+import { Switch, Route } from 'react-router-dom'
 // import { Link } from 'react-router-dom';
 import Chat from 'Components/Chat'
 import Categories from 'Components/categories';
@@ -26,9 +27,12 @@ class Landing extends Component {
             </Col>
         </Row>
         <div className="text-center">
-          {/* Things will go here */}
           {/* <Chat /> */}
-          <Categories />
+          {/* <Categories /> */}
+          <Switch>
+            <Route path="/chat" component={Chat} />
+            <Route path="/*" component={Categories} />
+          </Switch>
         </div>
       </Container>
     );

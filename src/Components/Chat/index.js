@@ -7,15 +7,15 @@ class Chat extends React.Component {
         complaintId: 'CID-666',
         messages: [
             {
-                self: false,
-                author: 'aeou',
-                content: 'aoeuaoeuaoeu',
+                self: true,
+                author: 'Driver A',
+                content: 'Complaint by driver A',
                 timestamp: new Date()
             },
             {
-                self: true,
-                author: 'aeou2',
-                content: 'aoeuaoeuaoeu2',
+                self: false,
+                author: 'Dispatcher',
+                content: 'Answer from dispatcher...',
                 timestamp: new Date()
             }
         ],
@@ -38,8 +38,8 @@ class Chat extends React.Component {
                     <Col xs="9" md="10">
                         <Input type="textarea" value={this.state.messageText}>{this.state.messageText}</Input>
                     </Col>
-                    <Col xs="3" md="2">
-                        <Button>SEND</Button>
+                    <Col xs="3" md="2" className="mt-3">
+                        <Button size="lg">SEND</Button>
                     </Col>
                 </Row>
             </>
