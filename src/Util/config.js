@@ -4,7 +4,7 @@ const config_dev = {
 };
 
 const config_prod = {
-    api_base: 'https://biker.reacticket.com/api/',
+    api_base: 'https://path.com/api/',
     debug: false
 };
 
